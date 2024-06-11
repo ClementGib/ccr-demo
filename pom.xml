@@ -15,15 +15,14 @@
 	<description>ccr-demo</description>
 	<properties>
 		<java.version>21</java.version>
+		<spring-boot.version>3.3.0</spring-boot.version>
+		<jakarta-servlet.version>4.0.4</jakarta-servlet.version>
+		<jersey.version>2.36</jersey.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.kafka</groupId>
@@ -59,6 +58,12 @@
 			<groupId>org.apache.spark</groupId>
 			<artifactId>spark-sql_2.13</artifactId>
 			<version>3.5.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>jakarta.servlet</groupId>
+			<artifactId>jakarta.servlet-api</artifactId>
+			<version>${jakarta-servlet.version}</version>
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
