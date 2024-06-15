@@ -1,7 +1,6 @@
-package com.cds.ccr.core.deal;
+package com.cdx.ccr.core.deal;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
